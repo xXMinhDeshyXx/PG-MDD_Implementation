@@ -46,9 +46,8 @@ class L2_Dataset(Dataset):
   def __len__(self):
       return self.len
   
-
-  def collate_fn(batch):
-    with torch.no_grad():
+def collate_fn(batch):
+  with torch.no_grad():
 
       #Get max len
       max = [-1]*4
@@ -87,8 +86,7 @@ class L2_Dataset(Dataset):
       cols['error']           = torch.tensor(cols['error'],       dtype=torch.long)
       cols['outputlengths']   = torch.tensor(cols['outputlengths'], dtype=torch.long)
       
-    return cols['waveform'], cols['canonical'], cols['transcript'], cols['error'], cols['outputlengths']
-
+  return cols['waveform'], cols['canonical'], cols['transcript'], cols['error'], cols['outputlengths']
       
 
 
