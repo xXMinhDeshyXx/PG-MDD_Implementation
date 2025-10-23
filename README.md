@@ -9,4 +9,4 @@ A proper setup of the dataset used in this repository was also replicated and is
 
 Run the Timit CTC first then run the Fullmodel
 
-Please note that the current version is still in development and not fully operational. (One is on the way, I just need to rewrite my notebook into Python code lol :v) 
+
